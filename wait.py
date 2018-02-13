@@ -19,7 +19,6 @@ for attempts_made in range(max_attempts):
     response = client.get_caller_identity()
   except:
     print('Error getting identity')
-    response = {}
   else:
     if match_role in response['Arn']:
       print('Matching role ("{}") found'.format(response['Arn']))
@@ -30,7 +29,7 @@ for attempts_made in range(max_attempts):
 
   if (attempts_made + 1) >= max_attempts:
     print('Maximum number of attempts reached ({}), giving up'.format(max_attempts))
-    quit(3)
+    quit(2)
 
   print('Will check again in {} seconds'.format(interval_in_seconds))
   print('----------------------------------------------')
