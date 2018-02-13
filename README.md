@@ -43,4 +43,4 @@ IAM Waiter accepts three environment variables for configuration:
 * `MAX_ATTEMPTS` Will check IAM role this many times before giving up, defaults to 100.
 
 ## License
-MIT
+Apache License 2.0
