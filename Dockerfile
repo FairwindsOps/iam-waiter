@@ -1,6 +1,6 @@
 FROM docker.io/python:3.6.4-alpine3.7
 
-LABEL maintainer="rob@reactiveops.com"
+LABEL maintainer="rob@fairwinds.com"
 LABEL description="Waits for matching IAM role to be assigned"
 
 COPY . .
